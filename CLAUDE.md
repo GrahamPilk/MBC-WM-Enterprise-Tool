@@ -2,7 +2,9 @@
 Pre-build analysis workspace for revamping West Monroe's public "AI-Native Enterprise Agent" (https://agents.westmonroe.ai/ai-native-enterprise-agent/) for MBC. Graham is tech lead. There is no application code yet, and the files never say what "MBC" stands for.
 
 ## Stack & layout
-- Not a git repo. No source tree, package manifest or chosen stack; the product stack is still undecided.
+- Git repo: public `GrahamPilk/MBC-WM-Enterprise-Tool` on GitHub, default branch `main`. Graham's local clone is `C:\Users\graha\MBC-WM-Enterprise-Tool`. It replaces the old `MBC-wm-ai` and `MBC_enterprise_tool` folders and the private `GrahamPilk/MBC_enterprise_tool` repo, which is empty and unused.
+- No source tree, package manifest or chosen stack; the product stack is still undecided.
+- `Agents.md`: agent guidelines brought over from the old `MBC_enterprise_tool` folder (Codex reads it).
 - `build_spec.py`: ReportLab script that generates `MBC-wm-ai_Tool_Spec.pdf` (the spec; all content is hard-coded in the script).
 - `MBC-wm-ai_Tool_Spec.pdf`: generated output (6 pages), "Draft v0.2", dated 23 Sep 2026.
 - `West Monroe AI-Native Enterprise Agent Senior Consultant Overview.pdf`: 3-page review dated 5 Oct 2026.
@@ -13,10 +15,11 @@ Pre-build analysis workspace for revamping West Monroe's public "AI-Native Enter
 
 ## How to work here
 - Edit `build_spec.py`, never the PDF, then regenerate and check the pages.
-- Planned team workflow (not yet in effect, because no repo exists): private GitHub repo under an org, short-lived branches (`feat/`, `fix/`, `chore/`, `docs/`, `spike/`), PRs into a protected `main` with 1 approval, squash merge, Conventional Commits, secrets only in git-ignored `.env`. The team also uses Codex; if an `AGENTS.md` appears, follow it and don't duplicate it here.
+- Team workflow from `CODEX_GIT_SETUP.md`, only partly in effect: the repo is public under Graham's personal account, not private under an org. Branch protection on `main` hasn't been confirmed. Intended conventions: short-lived branches (`feat/`, `fix/`, `chore/`, `docs/`, `spike/`), PRs into a protected `main` with 1 approval, squash merge, Conventional Commits, secrets only in git-ignored `.env`. The team also uses Codex; follow `Agents.md` and don't duplicate it here.
 
 ## Gotchas
-- `CODEX_GIT_SETUP.md` is a plan, not a record. `<ORG>`/`<REPO>` are unfilled, no repo or remote exists, and its step to move the spec and script into `docs/` hasn't happened.
+- `CODEX_GIT_SETUP.md` is a plan, not a record. The real repo differs from it (see the status note at its top). Its step to move the spec and script into `docs/` hasn't happened.
+- The repo is public, but the spec PDF's footer says "Working draft, internal". Ask Graham before adding anything client-confidential.
 - The two PDFs differ in scope. The spec covers hands-on runs (Ameren, Chipotle). The overview covers the landing page and setup form only and says no brief was generated, so don't take output-quality claims from it.
 - Spec items marked "(inferred)" are unconfirmed; there is no repo or backend access to West Monroe's tool.
 - The spec's PDF-export test was skipped because it needs a real name and email. Don't submit personal details to the live tool without asking Graham.
