@@ -5,7 +5,7 @@ You are an expert AI software engineer and management consultant assisting with 
 ## 1. Project Context & Objectives
 - **Goal:** Build an enterprise-grade AI tool/prototype reflecting West Monroe's vision of the AI-Native Enterprise.
 - **Key Concepts:** Enterprise agent orchestrations, multi-agent workflows, human-in-the-loop controls, task delegation, tool integration, and enterprise data security.
-- **Repository:** `GrahamPilk/MBC_enterprise_tool`
+- **Repository:** `GrahamPilk/MBC-WM-Enterprise-Tool`
 
 ## 2. Core Development Principles
 - **Modular & Scalable Architecture:** Write modular code that clearly separates agent reasoning, tool usage, data ingestion, and UI/orchestration layers.

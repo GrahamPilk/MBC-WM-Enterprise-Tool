@@ -1,5 +1,7 @@
 # MBC-wm-ai: Git + GitHub setup with Codex
 
+> **Status (19 Oct 2026):** the repo now exists, but not the way this plan describes. It's **public** at `GrahamPilk/MBC-WM-Enterprise-Tool`, under Graham's personal account rather than an org, with `main` as the default branch. Wherever this doc says `<ORG>/<REPO>`, read `GrahamPilk/MBC-WM-Enterprise-Tool`. Part A steps 1 and 3-6 are effectively done, though without `.gitignore`, `.gitattributes`, `README.md` or the `docs/` move. Branch protection, the merge settings and team access (steps 7-9) haven't been confirmed. The team's agent rules live in `Agents.md` at the repo root.
+
 **Chosen approach:** one **private GitHub repo** owned by a **GitHub Organization**. Everyone signs in with the **GitHub CLI (`gh`)**, which handles HTTPS credentials, so nobody has to manage SSH keys. Work happens on short-lived **feature branches** that merge into a **protected `main`** through **pull requests**.
 
 Why this setup:
